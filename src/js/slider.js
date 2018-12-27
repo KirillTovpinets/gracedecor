@@ -1,9 +1,11 @@
 import * as _ from 'lodash';
+import ViewComponent from './mainView';
 
 export default class SliderComponent {
 	constructor() {
 		this.slides = document.querySelectorAll('.slide');
 		this.canMove = true;
+		this.view = new ViewComponent();
 	}
 	next() {
 		if(this.canMove) {
@@ -11,6 +13,11 @@ export default class SliderComponent {
 			const current = _.filter(this.slides, (e) => e.classList.contains('active'));
 			const next = _.filter(this.slides, (e) => !e.classList.contains('active') && !e.classList.contains('hide')).slice(0, 2);
 
+			if (next.length === 0) {
+				this.view.displayMenu();
+				this.canMove = true;
+				return;
+			}
 			_.forEach(current, (e) => {
 				e.classList.remove('active')
 				e.classList.add('hide');
@@ -28,6 +35,11 @@ export default class SliderComponent {
 			const current = _.filter(this.slides, (e) => e.classList.contains('active'));
 			const prev = _.filter(this.slides, (e) => e.classList.contains('hide')).reverse().slice(0, 2);
 
+			if (prev.length === 0) {
+				this.view.displayMenu();
+				this.canMove = true;
+				return;
+			}
 			_.forEach(current, (e) => {
 				e.classList.remove('active');
 			});
