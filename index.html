@@ -11,11 +11,11 @@
 <body>
 	<div class="popup-menu" id="menu">
 		<div class="controls">
-			<span class="lang lang-ru"></span>
+			<button class="lang lang-ru">RU</button>
 			<button class="close-btn" id="close">
 				<i class="fas fa-times fa-2x"></i>
 			</button>
-			<span class="lang lang-en"></span>
+			<button class="lang lang-en">EN</button>
 		</div>
 	</div>
 	<div class="menu-toggler">
@@ -23,32 +23,40 @@
 			<i class="fas fa-bars fa-2x"></i>
 		</button>
 	</div>
-	<div class="wrapper">
-		<div class="slide active">
+	<div class="wrapper slider">
+		<div class="slide active" data-slide="0">
 			<!-- <h4>Title 1</h4> -->
 		</div>
-		<div class="slide active">
+		<div class="slide active" data-slide="0">
 			<!-- <h4>Title</h4> -->
 		</div>
-		<div class="slide">
-			<h4>Title</h4>
+		<div class="slide" data-slide="1">
 		</div>
-		<div class="slide">
-			<h4>Title</h4>
+		<div class="slide" data-slide="1">
 		</div>
-		<div class="slide">
-			<h4>Title</h4>
+		<div class="slide" data-slide="2">
 		</div>
-		<div class="slide">
-			<h4>Title</h4>
+		<div class="slide" data-slide="2">
+		</div>
+		<div class="slide" data-slide="3">
+		</div>
+		<div class="slide" data-slide="3">
+		</div>
+		<div class="slide" data-slide="4">
+		</div>
+		<div class="slide" data-slide="4">
+		</div>
+		<div class="slide" data-slide="5">
+		</div>
+		<div class="slide" data-slide="5">
 		</div>
 		<div class="dots">
-			<div class="dot"><i class="fa-sort-down fas"></i></div>
-			<div class="dot"><i class="fa-sort-down fas"></i></div>
-			<div class="dot"><i class="fa-sort-down fas"></i></div>
-			<div class="dot"><i class="fa-sort-down fas"></i></div>
-			<div class="dot"><i class="fa-sort-down fas"></i></div>
-			<div class="dot"><i class="fa-sort-down fas"></i></div>
+			<div class="dot" id="control-0"><i class="fa-sort-down fas"></i></div>
+			<div class="dot" id="control-1"><i class="fa-sort-down fas"></i></div>
+			<div class="dot" id="control-2"><i class="fa-sort-down fas"></i></div>
+			<div class="dot" id="control-3"><i class="fa-sort-down fas"></i></div>
+			<div class="dot" id="control-4"><i class="fa-sort-down fas"></i></div>
+			<div class="dot" id="control-5"><i class="fa-sort-down fas"></i></div>
 		</div>
 	</div>
 	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>

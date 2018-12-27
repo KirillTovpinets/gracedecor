@@ -43,6 +43,12 @@ button
 	.controls
 		display: flex
 		justify-content: center
+		button
+			font-size: 15px
+			color: #d1c6c1
+			&:hover,
+			&.active
+				color: #000
 .wrapper
 	position: relative
 	height: 100vh
@@ -70,3 +76,19 @@ button
 		margin-left: 8px
 		top: 50%
 		left: 49%
+		.dot
+			display: flex
+			justify-content: center
+			align-items: flex-end
+			margin-bottom: 5px
+			&.active
+				height: 16px
+				&:before
+					content: ''
+					display: block
+					width: 8px
+					height: 8px
+					transform: rotate(45deg)
+					background-color: #cbbeb9
+				& .fa-sort-down
+					display: none

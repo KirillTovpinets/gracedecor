@@ -44,6 +44,11 @@ button {
   .popup-menu .controls {
     display: flex;
     justify-content: center; }
+    .popup-menu .controls button {
+      font-size: 15px;
+      color: #d1c6c1; }
+      .popup-menu .controls button:hover, .popup-menu .controls button.active {
+        color: #000; }
 
 .wrapper {
   position: relative;
@@ -72,3 +77,19 @@ button {
     margin-left: 8px;
     top: 50%;
     left: 49%; }
+    .wrapper .dots .dot {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-bottom: 5px; }
+      .wrapper .dots .dot.active {
+        height: 16px; }
+        .wrapper .dots .dot.active:before {
+          content: '';
+          display: block;
+          width: 8px;
+          height: 8px;
+          transform: rotate(45deg);
+          background-color: #cbbeb9; }
+        .wrapper .dots .dot.active .fa-sort-down {
+          display: none; }
