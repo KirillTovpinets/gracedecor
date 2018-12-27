@@ -29,7 +29,7 @@ export default class SliderComponent {
 			const prev = _.filter(this.slides, (e) => e.classList.contains('hide')).reverse().slice(0, 2);
 
 			_.forEach(current, (e) => {
-				e.classList.remove('active')
+				e.classList.remove('active');
 			});
 			setTimeout(() => {
 				this.canMove = true;

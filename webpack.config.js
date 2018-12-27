@@ -23,11 +23,11 @@ module.exports = {
     watch: true,
     devServer: {
         contentBase: './',
-        publicPath: '/dist/'
+        publicPath: '/'
     },
     plugins: [],
     output: {
         filename: "bundle.js",
-        path: path.resolve(__dirname,"dist")
+        path: path.resolve(__dirname)
     },
 }
