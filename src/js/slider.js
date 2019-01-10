@@ -7,6 +7,7 @@ export default class SliderComponent {
 		this.canMove = true;
 		this.view = new ViewComponent();
 		this.controls = document.querySelectorAll('.dot');
+		this.controls[0].classList.add('active');
 	}
 	next() {
 		if(this.canMove) {
@@ -24,9 +25,15 @@ export default class SliderComponent {
 				e.classList.remove('active')
 				e.classList.add('hide');
 			});
+			const logo = current[0].children[0];
+			const slogan = current[1].children[0];
+			slogan.classList.add('fadeOutUp');
+			logo.classList.add('fadeOutDown');
 			setTimeout(() => {
 				this.canMove = true;
 				_.forEach(next, (e) => e.classList.add('active'));
+				slogan.classList.remove('fadeOutUp');
+				logo.classList.remove('fadeOutDown');
 			}, 1000);
 		}
 	}
@@ -46,12 +53,18 @@ export default class SliderComponent {
 			_.forEach(current, (e) => {
 				e.classList.remove('active');
 			});
+			const logo = current[0].children[0];
+			const slogan = current[1].children[0];
+			slogan.classList.add('fadeOutUp');
+			logo.classList.add('fadeOutDown');
 			setTimeout(() => {
 				this.canMove = true;
 				_.forEach(prev, (e) => {
 					e.classList.add('active')
 					e.classList.remove('hide');
 				});
+				slogan.classList.remove('fadeOutUp');
+				logo.classList.remove('fadeOutDown');
 			}, 1000);
 		}
 	}

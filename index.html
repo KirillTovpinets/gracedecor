@@ -6,79 +6,111 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/animate.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 </head>
 <body>
 	<div class="popup-menu" id="menu">
-		<div class="controls">
-			<button class="lang lang-ru">RU</button>
-			<button class="close-btn" id="close">
-				<i class="fas fa-times fa-2x"></i>
-			</button>
-			<button class="lang lang-en">EN</button>
-		</div>
-		<div class="logo">
-				<img src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo1.png" alt="">
-		</div>
-		<div class="menu-content">
-			<nav>
-				<div class="link-item">
-					<a href="#">Menu Item 1</a>
-				</div>
-				<div class="link-item">
-					<a href="#">Menu Item 2</a>
-				</div>
-				<div class="link-item">
-					<a href="#">Menu Item 3</a>
-				</div>
-				<div class="link-item">
-					<a href="#">Menu Item 4</a>
-				</div>
-				<div class="link-item">
-					<a href="#">Menu Item 5</a>
-				</div>
-				<div class="link-item">
-					<a href="#">Menu Item 6</a>
-				</div>
-			</nav>
-		</div>
-		<div class="social">
-			<div class="icon">
-				<i class="fab fa-instagram fa-3x"></i>
+		<video src="./src//videos/Clouds And Rays Of Sun.mp4" autoplay="autoplay" muted="muted" loop="loop"></video>
+		<div class="menu-wrapper">
+			<div class="controls">
+				<button class="lang lang-ru">RU</button>
+				<button class="close-btn" id="close">
+					<i class="fas fa-times fa-2x"></i>
+				</button>
+				<button class="lang lang-en">EN</button>
 			</div>
-			<div class="icon">
-				<i class="fab fa-vk fa-3x"></i>
+			<div class="logo">
+					<img src="./src/img/logo.png" alt="">
 			</div>
-			<div class="icon">
-				<i class="fab fa-facebook-f fa-3x"></i>
+			<div class="menu-content">
+				<nav>
+					<div class="link-item">
+						<a href="#">О НАС</a>
+					</div>
+					<div class="link-item">
+						<a href="#">СВАДЬБЫ</a>
+					</div>
+					<div class="link-item">
+						<a href="#">НОВЫЙ ГОД</a>
+					</div>
+					<div class="link-item">
+						<a href="#">ПОЛИГРАФИЯ</a>
+					</div>
+					<div class="link-item">
+						<a href="#">АКСЕССУАРЫ</a>
+					</div>
+					<div class="link-item">
+						<a href="#">БЛОГ</a>
+					</div>
+					<div class="link-item">
+						<a href="#">КОНТАКТЫ</a>
+					</div>
+				</nav>
+			</div>
+			<div class="copyright">
+				<div class="social">
+					<div class="icon">
+						<i class="fab fa-instagram"></i>
+					</div>
+					<div class="icon">
+						<i class="fab fa-vk"></i>
+					</div>
+					<div class="icon">
+						<i class="fab fa-facebook-f"></i>
+					</div>
+				</div>
+				<span>&copy; 2018 gracedecor</span>
 			</div>
 		</div>
-		<div class="copyright">
-			&copy; 2018 gracedecor
-		</div>
-	</div>
-	<div class="menu-toggler">
-		<button id="toggler">
-			<i class="fas fa-bars fa-2x"></i>
-		</button>
 	</div>
 	<div class="wrapper slider">
+		<div class="slide active" data-slide="0"><img src="./src/img/logo.png" alt="" class="logo animated" width="250"></div>
 		<div class="slide active" data-slide="0">
-			<!-- <h4>Title 1</h4> -->
+			<div class="text-container animated">
+				<p class="slogan"><span>ДЕТАЛИ ВАШЕГО ПРАЗДНИКА</span><span>ОТРАЖЕНИЕ ВАШЕЙ ИСТОРИИ</span></p>
+			</div>
 		</div>
-		<div class="slide active" data-slide="0">
-			<!-- <h4>Title</h4> -->
+		<div class="slide" data-slide="1">
+			<img src="./src/img/logo.png" alt="" class="logo animated" width="250">
 		</div>
-		<div class="slide" data-slide="1"></div>
-		<div class="slide" data-slide="1"></div>
-		<div class="slide" data-slide="2"></div>
-		<div class="slide" data-slide="2"></div>
-		<div class="slide" data-slide="3"></div>
-		<div class="slide" data-slide="3"></div>
-		<div class="slide" data-slide="4"></div>
-		<div class="slide" data-slide="4"></div>
-		<div class="slide" data-slide="5"></div>
-		<div class="slide" data-slide="5"></div>
+		<div class="slide" data-slide="1">
+			<div class="text-container animated">
+				<p class="slogan"><span>ДЕТАЛИ ВАШЕГО ПРАЗДНИКА</span><span>ОТРАЖЕНИЕ ВАШЕЙ ИСТОРИИ</span></p>
+			</div>
+		</div>
+		<div class="slide" data-slide="2">
+			<img src="./src/img/logo.png" alt="" class="logo animated" width="250">
+		</div>
+		<div class="slide" data-slide="2">
+			<div class="text-container animated">
+				<p class="slogan"><span>ДЕТАЛИ ВАШЕГО ПРАЗДНИКА</span><span>ОТРАЖЕНИЕ ВАШЕЙ ИСТОРИИ</span></p>
+			</div>
+		</div>
+		<div class="slide" data-slide="3">
+			<img src="./src/img/logo.png" alt="" class="logo animated" width="250">
+		</div>
+		<div class="slide" data-slide="3">
+			<div class="text-container animated">
+				<p class="slogan"><span>ДЕТАЛИ ВАШЕГО ПРАЗДНИКА</span><span>ОТРАЖЕНИЕ ВАШЕЙ ИСТОРИИ</span></p>
+			</div>
+		</div>
+		<div class="slide" data-slide="4">
+			<img src="./src/img/logo.png" alt="" class="logo animated" width="250">
+		</div>
+		<div class="slide" data-slide="4">
+			<div class="text-container animated">
+				<p class="slogan"><span>ДЕТАЛИ ВАШЕГО ПРАЗДНИКА</span><span>ОТРАЖЕНИЕ ВАШЕЙ ИСТОРИИ</span></p>
+			</div>
+		</div>
+		<div class="slide" data-slide="5">
+			<img src="./src/img/logo.png" alt="" class="logo animated" width="250">
+		</div>
+		<div class="slide" data-slide="5">
+			<div class="text-container animated">
+				<p class="slogan"><span>ДЕТАЛИ ВАШЕГО ПРАЗДНИКА</span><span>ОТРАЖЕНИЕ ВАШЕЙ ИСТОРИИ</span></p>
+			</div>
+		</div>
 		<div class="dots">
 			<div class="dot" id="control-0"><i class="fa-sort-down fas"></i></div>
 			<div class="dot" id="control-1"><i class="fa-sort-down fas"></i></div>
@@ -87,6 +119,11 @@
 			<div class="dot" id="control-4"><i class="fa-sort-down fas"></i></div>
 			<div class="dot" id="control-5"><i class="fa-sort-down fas"></i></div>
 		</div>
+	</div>
+	<div class="menu-toggler">
+		<button id="toggler">
+			<i class="fas fa-bars fa-2x"></i>
+		</button>
 	</div>
 	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
 	<script src="bundle.js"></script>
