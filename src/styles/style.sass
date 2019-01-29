@@ -1,5 +1,8 @@
+@import './mixins.scss'
+@include font-face('Romul', '../fonts/Romul')
 *
 	box-sizing: border-box
+	font-family: 'Romul'
 
 body, html 
 	margin: 0
@@ -129,12 +132,12 @@ a
 		position: absolute
 		right: 52%
 		overflow: hidden
-		background: url('http://placehold.it/1700x600?text=keyrealby')
+		background-image: url('../img/photo-1.jpg')
 		background-size: cover
-		background-position: center
-		background-attachment: fixed
+		// background-attachment: fixed
 		transition: all 1s ease-out
 		&:nth-child(2n)
+			background-image: url('../img/photo-2.jpg')
 			left: 52%
 			top: -100%
 		&:nth-child(2n + 1)
@@ -155,7 +158,7 @@ a
 			transition: all .3s 1.2s ease
 			opacity: 0
 			.slogan
-				font-size: 30px
+				font-size: 24px
 				line-height: 1.3
 				span
 					display: block
@@ -181,3 +184,15 @@ a
 					background-color: #cbbeb9
 				& .fa-sort-down
 					display: none
+.container
+	width: 80%
+	margin: 0 auto
+	padding-top: 65px
+	.title
+		text-align: center
+		font-size: 50px
+	hr.divider
+		width: 50px
+		background-color: #cbbeb9
+	p
+		font-family: sans-serif

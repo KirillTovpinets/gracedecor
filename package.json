@@ -13,7 +13,6 @@
     "css-loader": "^2.0.1",
     "eslint": "^5.10.0",
     "extract-loader": "^3.1.0",
-    "file-loader": "^2.0.0",
     "lodash": "^4.17.11",
     "node-sass": "^4.11.0",
     "path": "^0.12.7",
@@ -22,6 +21,9 @@
     "webpack-cli": "^3.1.2"
   },
   "devDependencies": {
+    "file-loader": "^2.0.0",
+    "ttf-loader": "^1.0.2",
+    "url-loader": "^1.1.2",
     "webpack-dev-server": "^3.1.10",
     "webpack-livereload-plugin": "^2.2.0"
   }

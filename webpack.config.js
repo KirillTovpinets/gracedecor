@@ -4,20 +4,38 @@ module.exports = {
     mode: "development",
     module: {
         rules: [
-            {
-                test: /\.(sa|sc|c)ss/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: 'styles/[name].css'
-                        }
-                    },
-                    'extract-loader',
-                    'css-loader',
-                    'sass-loader'
-                ]
-            }
+					{
+						test: /\.(jpg|png)/,
+						use: [
+							'url-loader'
+						]
+					},
+					{
+							test: /\.((sa|sc|c)ss|img)/,
+							use: [
+									{
+											loader: 'file-loader',
+											options: {
+													name: '[name].css'
+											}
+									},
+									'extract-loader',
+									'css-loader',
+									'sass-loader'
+							]
+					},
+					{
+						test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+						use: [
+							{
+								loader: 'file-loader',
+								options: {
+									name: '[hash].[ext]',
+									outputPath: 'styles'
+								},
+							}
+						]
+					},
         ]
     },
     watch: true,
